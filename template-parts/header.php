@@ -182,10 +182,12 @@ include("init/main-functions.php");
 
 	      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
 	        <ul class="navbar-nav gap-3 align-items-center">
-	          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
-	          <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
+	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>">Home</a></li>
+	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>/blog.php">Blogs</a></li>
+	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>#reviews">Reviews</a></li>
+	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>#how">How it works</a></li>
 	          <li class="nav-item">
-	            <a href="#" class="btn-eco scroll-form">Schedule an appointment</a>
+	            <a href="<?php echo $base_url; ?>#contactForm" class="btn-eco scroll-form">Schedule an appointment</a>
 	          </li>
 	          <li class="nav-item">
 	            <a class="nav-link" href="tel:1111111"><i class="fa fa-phone"></i> 1-111-111</a>

@@ -206,7 +206,7 @@ include("template-parts/header.php");
 <section id="form" class="bg-light">
   <h2 class="text-center mb-4">Schedule an appointment now</h2>
   <div class="container">
-    <form class="row g-3 main-form">
+    <form class="row g-3 main-form" id="contactForm">
       <div class="response-container">
       </div>
 
