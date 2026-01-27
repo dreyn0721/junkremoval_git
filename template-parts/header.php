@@ -2,7 +2,6 @@
 include("init/database.php");
 include("init/main-functions.php"); 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,8 +25,177 @@ include("init/main-functions.php");
 	<meta name="description" content="<?=$description;?>">
 	<meta name="author" content="<?=$author;?>" />
 	<title><?=$pagetitle;?></title>
+
+
+
+	<style>
+    :root{
+      --eco-green:#2f8f46;
+      --secondary:black;
+      --light:#f2f4f5;
+    }
+
+    body{scroll-behavior:smooth;}
+
+    /* HEADER */
+    header{
+      position:sticky;
+      top:0;
+      z-index:999;
+      background:white;
+      box-shadow:0 2px 5px rgba(0,0,0,.1);
+    }
+
+    .logo{text-align:center;padding:10px;}
+
+    .nav-link{color:black;font-weight:500;}
+    .nav-link:hover{color:var(--eco-green);}
+
+    .btn-eco{
+      background:var(--eco-green);
+      color:white;
+      border-radius:30px;
+      padding:10px 20px;
+      border:none;
+    }
+    .btn-eco:hover{opacity:.9;}
+
+    /* PROMO BAR */
+    .promo{
+      background:red;
+      color:white;
+      text-align:center;
+      padding:10px;
+      font-weight:bold;
+    }
+
+    /* HERO */
+    .hero{
+      background:
+        linear-gradient(to right, rgba(47,143,70,.8), transparent),
+        url("https://dummyimage.com/800x400/000/fff") center/cover no-repeat;
+      padding:80px 20px;
+    }
+
+    .hero-card{
+      background:white;
+      border-radius:15px;
+      padding:30px;
+      max-width:50%;
+    }
+
+    @media(max-width:768px){
+      .hero-card{max-width:100%;}
+    }
+
+    /* SECTIONS */
+    section{padding:70px 20px;}
+    .bg-light{background:var(--light);}
+    .bg-green{background:var(--eco-green);color:white;}
+
+    /* CARDS */
+    .service-card img{width:100%;border-radius:10px;}
+    .service-card{
+      background:white;
+      border-radius:15px;
+      padding:20px;
+      height:100%;
+    }
+
+    /* REVIEWS */
+    .review-slider{overflow:hidden;position:relative;}
+    .review-track{
+      display:flex;
+      transition:.4s;
+    }
+    .review-card{
+	  min-width:33.33%;
+	  padding:10px;
+	}
+
+	.review-card .card{
+	  padding:15px;
+	  font-size:0.95rem;
+	}
+
+    @media(max-width:768px){
+      .review-card{min-width:100%;}
+    }
+
+    .slider-btn{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      background:var(--eco-green);
+      color:white;
+      border:none;
+      width:40px;height:40px;
+      border-radius:50%;
+      z-index: 100;
+    }
+    .prev{left:0;}
+    .next{right:0;}
+
+    /* FOOTER */
+    footer{background:var(--eco-green);color:white;padding:40px 20px;}
+    footer a{color:white;text-decoration:none;}
+    footer a:hover{text-decoration:underline;}
+
+    .copyright{
+      background:#cfd0d1;
+      text-align:center;
+      padding:10px;
+    }
+
+    .promo{
+	  transition: all 0.3s ease;
+	}
+
+
+
+
+
+
+
+
+
+    
+
+
+  </style>
+
+
+
 </head>
 <body>
 
+	<header>
+	  <div class="logo">
+	    <img src="https://dummyimage.com/200x80/000/fff&text=LOGO" alt="logo">
+	  </div>
 
-	<main class="main-content">
+	  <nav class="navbar navbar-expand-lg">
+	    <div class="container">
+	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+
+	      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+	        <ul class="navbar-nav gap-3 align-items-center">
+	          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+	          <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
+	          <li class="nav-item">
+	            <a href="#" class="btn-eco scroll-form">Schedule an appointment</a>
+	          </li>
+	          <li class="nav-item">
+	            <a class="nav-link" href="tel:1111111"><i class="fa fa-phone"></i> 1-111-111</a>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+		<div class="promo" id="promoBar">
+			Special promo today, book a service now and save 20%!
+		</div>
+	</header>
