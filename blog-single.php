@@ -1,7 +1,7 @@
 <?php
 // Vars
 $page = "blog";
-$pagetitle = "Blog | AI consultation";
+$pagetitle = "Blog | Junk Removal";
 $description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non euismod dolor. Integer sapien ipsum, dapibus eget bibendum sed nullam sodales.";
 
 

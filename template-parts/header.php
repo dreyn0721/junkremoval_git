@@ -186,12 +186,25 @@ include("init/main-functions.php");
 	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>/blog.php">Blogs</a></li>
 	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>#reviews">Reviews</a></li>
 	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>#how">How it works</a></li>
+
+		        <?php if( logged_in() ): ?>
+						<li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>/logout.php">Logout</a></li>
+				<?php else: ?>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#authModal">
+							Login
+						</a>
+					</li>
+				<?php endif; ?>
+				
 	          <li class="nav-item">
 	            <a href="<?php echo $base_url; ?>#contactForm" class="btn-eco scroll-form">Schedule an appointment</a>
 	          </li>
 	          <li class="nav-item">
 	            <a class="nav-link" href="tel:1111111"><i class="fa fa-phone"></i> 1-111-111</a>
 	          </li>
+
+
 	        </ul>
 	      </div>
 	    </div>
@@ -201,3 +214,4 @@ include("init/main-functions.php");
 			Special promo today, book a service now and save 20%!
 		</div>
 	</header>
+	<?php include("template-parts/auth-modal.php"); ?>
