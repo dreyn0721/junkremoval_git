@@ -215,6 +215,84 @@ include("template-parts/header.php");
       <div class="col-md-6"><input class="form-control email" placeholder="Email"></div>
       <div class="col-md-6"><input class="form-control phone" placeholder="Phone number"></div>
       <div class="col-md-12"><input class="form-control zipcode" placeholder="Zip code"></div>
+
+      <div class="col-md-12 radio-input-container mt-5">
+        <h3>Select Service</h3>
+        <div class="radio-group">
+
+
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Junk Removal" required>
+            <span class="radio-content">
+              <strong>Junk Removal</strong>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Move-Out & Cleanout Services" required>
+            <span class="radio-content">
+              <strong>Move-Out & Cleanout Services</strong>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Estate & Property Cleanouts" required>
+            <span class="radio-content">
+              <strong>Estate & Property Cleanouts</strong>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Construction Debris Removal" required>
+            <span class="radio-content">
+              <strong>Construction Debris Removal</strong>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Appliance & Furniture Handling" required>
+            <span class="radio-content">
+              <strong>Appliance & Furniture Handling</strong>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Eco-Friendly Disposal" required>
+            <span class="radio-content">
+              <strong>Eco-Friendly Disposal</strong>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Commercial Services" required>
+            <span class="radio-content">
+              <strong>Commercial Services</strong>
+              <small>Office cleanouts Retail space cleanouts Warehouse &. light industrial hauling</small>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Property Management Support" required>
+            <span class="radio-content">
+              <strong>Property Management Support</strong>
+              <small>Turnover cleanouts Maintenance debris hauling Ongoing service contracts</small>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <input type="radio" name="serviceType" class="radio-input-service" value="Real Estate Support Services" required>
+            <span class="radio-content">
+              <strong>Real Estate Support Services</strong>
+              <small> Pre-listing cleanouts Post-closing junk removal Investor flip cleanouts</small>
+            </span>
+          </label>
+
+
+
+        </div>
+      </div>
+
       <div class="col-12 text-center">
         <button class="btn-eco submit-btn">Submit and we will call you</button>
       </div>
@@ -237,6 +315,9 @@ include("template-parts/header.php");
       var zipcode = jQuery(".main-form .zipcode").val();
 
 
+      var service = jQuery('input[name="serviceType"]:checked').val();
+
+
       $.ajax({
         method: "POST",
         url: "",
@@ -246,7 +327,8 @@ include("template-parts/header.php");
           lastname: lastname , 
           email: email, 
           phone: phone,
-          zipcode: zipcode
+          zipcode: zipcode,
+          service: service
 
         }
       }).done(function( response ) {

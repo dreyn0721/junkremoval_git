@@ -3,8 +3,8 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <img src="https://dummyimage.com/200x80/000/fff&text=LOGO"><br>
+      <div class="col-md-4 logo">
+        <img class="" src="<?php echo $base_url; ?>/assets/img/logoipsum-410.png"><br>
         Junk removal
       </div>
       <div class="col-md-4">
@@ -59,10 +59,10 @@
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       promoBar.style.transform = 'translateY(-100%)';
-      promoBar.style.opacity = '0';
+      promoBar.style.display = 'none';
     } else {
       promoBar.style.transform = 'translateY(0)';
-      promoBar.style.opacity = '1';
+      promoBar.style.display = 'block';
     }
   });
 </script>

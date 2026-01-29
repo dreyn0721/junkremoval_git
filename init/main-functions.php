@@ -764,6 +764,8 @@ if( isset( $_POST['action'] ) && $_POST['action'] == "entry" ){
         phone,
         email,
         zipcode,
+        
+        posted_by_id,
         datetimeinserted
       ) 
       VALUES 
@@ -773,6 +775,8 @@ if( isset( $_POST['action'] ) && $_POST['action'] == "entry" ){
         '$phone', 
         '$email', 
         '$zipcode', 
+        
+        '$user_id',
         '$current_time'
       ) 
       ";

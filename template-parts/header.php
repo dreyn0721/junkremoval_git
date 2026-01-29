@@ -170,22 +170,23 @@ include("init/main-functions.php");
 <body>
 
 	<header>
-	  <div class="logo">
-	    <img src="https://dummyimage.com/200x80/000/fff&text=LOGO" alt="logo">
-	  </div>
 
 	  <nav class="navbar navbar-expand-lg">
 	    <div class="container">
+
+
+		  <div class="logo">
+		    <a href="<?php echo $base_url; ?>"><img src="<?php echo $base_url; ?>/assets/img/logoipsum-410.png" alt="Website Logo"></a>
+		  </div>
+
+
 	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
 	        <span class="navbar-toggler-icon"></span>
 	      </button>
 
 	      <div class="collapse navbar-collapse justify-content-center" id="navMenu">
 	        <ul class="navbar-nav gap-3 align-items-center">
-	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>">Home</a></li>
 	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>/blog.php">Blogs</a></li>
-	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>#reviews">Reviews</a></li>
-	          <li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>#how">How it works</a></li>
 
 		        <?php if( logged_in() ): ?>
 						<li class="nav-item"><a class="nav-link" href="<?php echo $base_url; ?>/logout.php">Logout</a></li>
