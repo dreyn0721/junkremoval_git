@@ -30,8 +30,8 @@ include("init/main-functions.php");
 
 	<style>
     :root{
-      --eco-green:#2f8f46;
-      --secondary:black;
+      --eco-green:#125793;
+      --secondary:#081C49;
       --light:#f2f4f5;
     }
 
@@ -48,15 +48,21 @@ include("init/main-functions.php");
 
     .logo{text-align:center;padding:10px;}
 
-    .nav-link{color:black;font-weight:500;}
-    .nav-link:hover{color:var(--eco-green);}
+    .nav-link{
+    	color:#fff;
+    }
+
+    .nav-link:hover{
+    	color:#081C49;
+    }
 
     .btn-eco{
-      background:var(--eco-green);
+      background:var(--secondary);
       color:white;
       border-radius:30px;
       padding:10px 20px;
       border:none;
+      text-decoration: none;
     }
     .btn-eco:hover{opacity:.9;}
 
@@ -72,8 +78,8 @@ include("init/main-functions.php");
     /* HERO */
     .hero{
       background:
-        linear-gradient(to right, rgba(47,143,70,.8), transparent),
-        url("https://dummyimage.com/800x400/000/fff") center/cover no-repeat;
+        linear-gradient(to right, #6495AF, transparent),
+        url("<?php echo $base_url; ?>/assets/img/Main background.png") center/cover no-repeat;
       padding:80px 20px;
     }
 
@@ -202,7 +208,7 @@ include("init/main-functions.php");
 	            <a href="<?php echo $base_url; ?>#contactForm" class="btn-eco scroll-form">Schedule an appointment</a>
 	          </li>
 	          <li class="nav-item">
-	            <a class="nav-link" href="tel:1111111"><i class="fa fa-phone"></i> 1-111-111</a>
+	            <a class="nav-link" href="tel:+18457044685"><i class="fa fa-phone"></i> (845) 704-4685</a>
 	          </li>
 
 

@@ -5,22 +5,26 @@
     <div class="row">
       <div class="col-md-4 logo">
         <img class="" src="<?php echo $base_url; ?>/assets/img/logoipsum-410.png"><br>
-        Junk removal
       </div>
       <div class="col-md-4">
-        <h6>Services</h6>
-        <ul>
-          <li>Residential</li>
-          <li>Commercial</li>
+        <h5>Services</h5>
+        <ul class="list-unstyled">
+          <li>Junk Removal</li>
+          <li>Move-Out & Cleanout Services</li>
+          <li>Estate & Property Cleanouts</li>
+          <li>Construction Debris Removal</li>
+          <li>Appliance & Furniture Handling</li>
+          <li>Eco-Friendly Disposal</li>
+          <li>Commercial Services</li>
+          <li>Property Management Support</li>
+          <li>Real Estate Support Services</li>
         </ul>
       </div>
       <div class="col-md-4">
-        <h6>Quick Links</h6>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a class="scroll-form" href="#">Contact us</a></li>
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="<?php echo $base_url;?>/blog.php">Blog</a></li>
+          <li><a class="scroll-form" href="<?php echo $base_url;?>#form">Contact us</a></li>
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>

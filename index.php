@@ -26,13 +26,15 @@ include("template-parts/header.php");
 </section>
 
 <!-- WHAT WE DO -->
-<section class="bg-light">
+<section class="section-props">
+
+
   <h2 class="text-center mb-5" style="color:var(--eco-green)">What we do</h2>
   <div class="container">
     <div class="row g-4">
       <div class="col-md-4">
         <div class="service-card">
-          <img src="https://dummyimage.com/400x400/000/fff">
+          <img src="<?php echo $base_url; ?>/assets/img/eco-friendly disposal.png">
           <h5 class="mt-3">Full-Service Junk Removal</h5>
           <ul>
             <li>Free estimates</li>
@@ -46,7 +48,7 @@ include("template-parts/header.php");
 
       <div class="col-md-4">
         <div class="service-card">
-          <img src="https://dummyimage.com/400x400/000/fff">
+          <img src="<?php echo $base_url; ?>/assets/img/construction and debris removal.png">
           <h5 class="mt-3">Dumpster Rental</h5>
           <ul>
             <li>Fill at your own pace</li>
@@ -59,7 +61,7 @@ include("template-parts/header.php");
 
       <div class="col-md-4">
         <div class="service-card">
-          <img src="https://dummyimage.com/400x400/000/fff">
+          <img src="<?php echo $base_url; ?>/assets/img/junk removal.png">
           <h5 class="mt-3">Dumpster Bag Pickup</h5>
           <ul>
             <li>Buy it, store it & fill it</li>
@@ -72,8 +74,9 @@ include("template-parts/header.php");
   </div>
 </section>
 
+
 <!-- REVIEWS -->
-<section id="reviews">
+<section id="reviews" class="section-glow">
   <h2 class="text-center mb-4">Reviews</h2>
   <div class="container review-slider">
     <button class="slider-btn prev">&#10094;</button>
@@ -84,10 +87,10 @@ include("template-parts/header.php");
 
       	<div class="review-card">
 		  <div class="card text-center">
-		    <img src="https://dummyimage.com/80x80/000/fff" class="review-img rounded-circle mx-auto mb-2">
-		    <h6 class="mb-1">Customer 1</h6>
+		    <img src="<?php echo $base_url;?>/assets/img/default-profile.jpg" class="review-img rounded-circle mx-auto mb-2">
+		    <h6 class="mb-1">Michael R. Dawson</h6>
 		    <p class="review-text mb-2">
-		      Excellent service, fast and friendly!
+		      “Fast, professional, and affordable. They cleared out my garage in less than an hour and even swept afterward. Scheduling was easy and the crew was super friendly.”
 		    </p>
 		    ⭐⭐⭐⭐⭐
 		  </div>
@@ -95,10 +98,10 @@ include("template-parts/header.php");
 
 		<div class="review-card">
 		  <div class="card text-center">
-		    <img src="https://dummyimage.com/80x80/000/fff" class="review-img rounded-circle mx-auto mb-2">
-		    <h6 class="mb-1">Customer 1</h6>
+		    <img src="<?php echo $base_url;?>/assets/img/default-profile.jpg" class="review-img rounded-circle mx-auto mb-2">
+		    <h6 class="mb-1">Amanda L. Brooks</h6>
 		    <p class="review-text mb-2">
-		      Excellent service, fast and friendly!
+		      “I called in the morning and they were able to come the same day. Great communication and fair pricing. I highly recommend them for any junk removal needs.”
 		    </p>
 		    ⭐⭐⭐⭐⭐
 		  </div>
@@ -106,10 +109,11 @@ include("template-parts/header.php");
 
 		<div class="review-card">
 		  <div class="card text-center">
-		    <img src="https://dummyimage.com/80x80/000/fff" class="review-img rounded-circle mx-auto mb-2">
-		    <h6 class="mb-1">Customer 1</h6>
+		    <img src="<?php echo $base_url;?>/assets/img/default-profile.jpg" class="review-img rounded-circle mx-auto mb-2">
+		    <h6 class="mb-1">Jason P. Miller
+</h6>
 		    <p class="review-text mb-2">
-		      Excellent service, fast and friendly!
+		      “Outstanding service from start to finish. They removed old furniture and appliances without any hassle. The team was respectful and worked quickly.”
 		    </p>
 		    ⭐⭐⭐⭐⭐
 		  </div>
@@ -117,10 +121,10 @@ include("template-parts/header.php");
 
 		<div class="review-card">
 		  <div class="card text-center">
-		    <img src="https://dummyimage.com/80x80/000/fff" class="review-img rounded-circle mx-auto mb-2">
-		    <h6 class="mb-1">Customer 1</h6>
+		    <img src="<?php echo $base_url;?>/assets/img/default-profile.jpg" class="review-img rounded-circle mx-auto mb-2">
+		    <h6 class="mb-1">Stephanie K. Turner</h6>
 		    <p class="review-text mb-2">
-		      Excellent service, fast and friendly!
+		      “I’ve used other junk removal companies before, but this one was by far the best. On time, transparent pricing, and no mess left behind.”
 		    </p>
 		    ⭐⭐⭐⭐⭐
 		  </div>
@@ -128,10 +132,10 @@ include("template-parts/header.php");
 
 		<div class="review-card">
 		  <div class="card text-center">
-		    <img src="https://dummyimage.com/80x80/000/fff" class="review-img rounded-circle mx-auto mb-2">
-		    <h6 class="mb-1">Customer 1</h6>
+		    <img src="<?php echo $base_url;?>/assets/img/default-profile.jpg" class="review-img rounded-circle mx-auto mb-2">
+		    <h6 class="mb-1">Robert J. Coleman</h6>
 		    <p class="review-text mb-2">
-		      Excellent service, fast and friendly!
+		      “Excellent experience. They helped clean out a rental property and handled everything efficiently. Saved me a lot of time and stress.”
 		    </p>
 		    ⭐⭐⭐⭐⭐
 		  </div>
@@ -139,10 +143,10 @@ include("template-parts/header.php");
 
 		<div class="review-card">
 		  <div class="card text-center">
-		    <img src="https://dummyimage.com/80x80/000/fff" class="review-img rounded-circle mx-auto mb-2">
-		    <h6 class="mb-1">Customer 1</h6>
+		    <img src="<?php echo $base_url;?>/assets/img/default-profile.jpg" class="review-img rounded-circle mx-auto mb-2">
+		    <h6 class="mb-1">Lisa M. Hernandez</h6>
 		    <p class="review-text mb-2">
-		      Excellent service, fast and friendly!
+		      “Very impressed with their professionalism. Booking was simple, and the crew arrived exactly when promised. I will definitely use them again.”
 		    </p>
 		    ⭐⭐⭐⭐⭐
 		  </div>
@@ -154,12 +158,10 @@ include("template-parts/header.php");
 </section>
 
 <!-- HOW IT WORKS -->
-<section id="how" class="bg-light">
+<section id="how" class="section-fade">
   <h2 class="text-center mb-3">How it works</h2>
   <p class="text-center container">
-    Junk Removal takes the stress out of junk removal for your home or business.
-    Our friendly, professional haulers show up, size up the job, and give you a free estimate.
-    Say yes, and we’ll usually haul it away right away.
+    Getting rid of unwanted junk has never been easier. Simply schedule your junk removal appointment online or by phone, and our friendly team will confirm a time that works best for you—often with same-day or next-day availability. When we arrive, just point to the items you want removed and we’ll take care of all the heavy lifting, loading, and cleanup, so you don’t have to lift a finger. Before we begin, you’ll receive a clear, upfront price based on the volume and type of junk, with no hidden fees or surprises. Once approved, our fully licensed and insured crew efficiently removes everything from furniture and appliances to yard waste and construction debris. After loading, we sweep the area clean and ensure your space is left neat and clutter-free. Whenever possible, we responsibly recycle or donate usable items, minimizing landfill waste and helping local communities. From start to finish, our process is fast, transparent, and stress-free—designed to give you peace of mind and a clean space in just one visit.
   </p>
 </section>
 
@@ -170,40 +172,192 @@ include("template-parts/header.php");
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
-          How does junk removal work?
+          What items do you remove?
         </button>
       </h2>
       <div id="q1" class="accordion-collapse collapse show">
         <div class="accordion-body">
-          Junk removal professionals arrive, provide an estimate, and haul away items once approved.
+          We remove most non-hazardous items, including furniture, appliances, mattresses, electronics, yard waste, construction debris, and general household junk. If you’re unsure about a specific item, just give us a call.
         </div>
       </div>
     </div>
 
     <div class="accordion-item">
-	  <h2 class="accordion-header">
-	    <button class="accordion-button collapsed"
-	            data-bs-toggle="collapse"
-	            data-bs-target="#q2">
-	      What items can junk removal take?
-	    </button>
-	  </h2>
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q2">
+            Do you offer same-day or next-day service?
+          </button>
+       </h2>
 
-	  <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
-	    <div class="accordion-body">
-	      Junk removal can take furniture, appliances, mattresses, electronics,
-	      yard waste, construction debris, and most non-hazardous household items.
-	      If you’re unsure, just ask—we’re happy to help.
-	    </div>
-	  </div>
-	</div>
+      <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Yes! We offer same-day and next-day junk removal in most areas, depending on availability. Call us early for the best chance at same-day pickup.
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q3">
+            How much does junk removal cost?
+          </button>
+       </h2>
+
+      <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Pricing is based on the volume of junk, item type, and labor required. We provide upfront, no-obligation quotes before starting any work—no hidden fees.
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q4">
+            Do I need to be present during the pickup?
+          </button>
+       </h2>
+
+      <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Not always. As long as we have clear access to the items and prior approval, we can remove your junk even if you’re not on-site.
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q5">
+            Are you licensed and insured?
+          </button>
+       </h2>
+
+      <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Yes. We are fully licensed and insured, so your property is protected while we work.
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q6">
+            Do you recycle or donate items?
+          </button>
+       </h2>
+
+      <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Absolutely. We make every effort to recycle, donate, or responsibly dispose of items whenever possible to minimize landfill waste.
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q7">
+            What items can’t you take?
+          </button>
+       </h2>
+
+      <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          We cannot remove hazardous materials such as chemicals, paint, asbestos, medical waste, or flammable liquids. Contact us if you’re unsure—we’ll guide you.
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q8">
+            How do I schedule a pickup?
+          </button>
+       </h2>
+
+      <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          You can schedule online through our booking form or call us directly. Our team will confirm the time and provide a clear quote before removal.
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q9">
+            Do you handle commercial junk removal?
+          </button>
+       </h2>
+
+      <div id="q9" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Yes. We offer junk removal for businesses, offices, retail spaces, property managers, and construction sites.
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <div class="accordion-item">
+       <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#q10">
+            Will you clean up after removing the junk?
+          </button>
+       </h2>
+
+      <div id="q10" class="accordion-collapse collapse" data-bs-parent="#faq">
+        <div class="accordion-body">
+          Yes. After removal, we sweep and clean the area, leaving your space neat and clutter-free.
+        </div>
+      </div>
+    </div>
 
 
   </div>
 </section>
 
 <!-- FORM -->
-<section id="form" class="bg-light">
+<section id="form" class="bg-light" style="padding-top: 170px;">
   <h2 class="text-center mb-4">Schedule an appointment now</h2>
   <div class="container">
     <form class="row g-3 main-form" id="contactForm">
